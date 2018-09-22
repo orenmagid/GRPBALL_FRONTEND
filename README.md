@@ -46,3 +46,7 @@ On the frontend:
   <li><a href="https://semantic-ui.com/">semantic-ui</a></li>
 
 </ul>
+
+## License
+
+MIT
