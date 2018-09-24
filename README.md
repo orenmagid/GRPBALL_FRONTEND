@@ -2,7 +2,7 @@
 
 This is the frontend repository for my final project for the Flatiron School's Immersive Software Engineering Bootcamp: an app for scheduling and organizing pickup basketball, as well as discovering other local players and groups of players.
 
-The frontend repository is available <a href="https://github.com/orenmagid/grpball_backend">here</a>.
+The backend repository is available <a href="https://github.com/orenmagid/grpball_backend">here</a>.
 
 <a href="https://medium.com/@autoimpedicis/reflecting-about-my-final-project-917223a9fa17">Here</a>'s a short blog post about the project.
 
