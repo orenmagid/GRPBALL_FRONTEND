@@ -4,8 +4,6 @@ This is the frontend repository for my final project for the Flatiron School's I
 
 The backend repository is available <a href="https://github.com/orenmagid/grpball_backend">here</a>.
 
-<a href="http://example.com/" target="_blank">Hello, world!</a>
-
 <a href="https://medium.com/@autoimpedicis/reflecting-about-my-final-project-917223a9fa17">Here</a>'s a short blog post about the project.
 
 
