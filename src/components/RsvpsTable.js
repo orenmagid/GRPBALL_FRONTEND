@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Table, List, Segment, Popup } from "semantic-ui-react";
+import { Table, List, Segment } from "semantic-ui-react";
 
 export default class RsvpsTable extends Component {
   userRsvpd = user => {
@@ -8,10 +8,6 @@ export default class RsvpsTable extends Component {
 
   render() {
     const { statusToDisplay, rsvps, users } = this.props;
-
-    let noRsvpUsers = users.filter(user => {
-      return !this.userRsvpd(user);
-    });
 
     if (
       statusToDisplay === "accepted" ||
