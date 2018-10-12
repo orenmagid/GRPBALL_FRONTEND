@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Route, Redirect } from "react-router-dom";
-
-import "./App.css";
 import MainContainer from "./containers/MainContainer";
 import NavBar from "./components/NavBar";
 import NewUserForm from "./components/NewUserForm";
