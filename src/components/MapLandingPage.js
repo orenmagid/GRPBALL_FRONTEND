@@ -1,16 +1,12 @@
 import React, { Component } from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LocationSearchInputForMap from "./LocationSearchInputForMap";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-import { Checkbox, Grid, Label, Header, Segment } from "semantic-ui-react";
+import { Checkbox, Grid, Header, Segment } from "semantic-ui-react";
 import MapLandingSessionInfo from "../components/MapLandingSessionInfo";
-import InteractiveSegment from "../components/InteractiveSegment";
 import GroupCardMinimalDisplay from "../components/GroupCardMinimalDisplay";
-import UserInfo from "../components/UserInfo";
 import MediaQuery from "react-responsive";
 import moment from "moment";
-
-import { baseUrl } from "../constants";
 
 export class MapLandingPage extends Component {
   state = {
@@ -117,14 +113,6 @@ export class MapLandingPage extends Component {
     }
   };
 
-  // onMouseoverMarker = (props, marker, e) => {
-  //   if (props.group) {
-  //     this.setState({ activeMarker: marker });
-  //   } else if (props.session) {
-  //     this.setState({ activeMarker: marker });
-  //   }
-  // };
-
   handleSelectEvent = event => {
     if (this.state.selectedEvent && this.state.selectedEvent.id === event.id) {
       this.setState({ selectedEvent: null });
@@ -157,7 +145,7 @@ export class MapLandingPage extends Component {
     });
 
   render() {
-    const { user, sessions, groups, users, createNewUser } = this.props;
+    const { user, sessions, createNewUser } = this.props;
 
     let initialCenter = {
       lat: 38.89511,
