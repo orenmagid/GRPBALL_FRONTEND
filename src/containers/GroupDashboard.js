@@ -149,7 +149,7 @@ class GroupDashboard extends Component {
       handleFetchSessions
     } = this.props;
 
-    const { activeItem, activeIndex, group, users } = this.state;
+    const { activeItem, activeIndex, users } = this.state;
 
     return (
       <Grid>

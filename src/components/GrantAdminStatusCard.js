@@ -14,7 +14,6 @@ export default class GrantAdminStatusCard extends Component {
       handleCloseClick,
       handleGrantAdminSubmit,
       user,
-      users,
       nonUserAdmins
     } = this.props;
 
