@@ -7,7 +7,6 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import "semantic-ui-css/semantic.min.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-// import "../semantic/dist/semantic.min.css";
 import "./index.css";
 import { API_WS_ROOT } from "./constants";
 
