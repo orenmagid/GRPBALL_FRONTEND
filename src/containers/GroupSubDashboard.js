@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Accordion, Icon, List } from "semantic-ui-react";
-import moment from "moment";
 
 import InteractiveSegment from "../components/InteractiveSegment";
 import SessionsTable from "../components/SessionsTable";
@@ -158,13 +157,7 @@ export default class GroupSubDashboard extends Component {
 
   render() {
     const { formToShow, currentSession, displayedUser, users } = this.state;
-    const {
-      activeIndex,
-      handleAccordianDisplay,
-      handleClick,
-      sessions,
-      user
-    } = this.props;
+    const { activeIndex, handleAccordianDisplay, sessions, user } = this.props;
 
     let group = this.state.group ? this.state.group : this.props.group;
 
