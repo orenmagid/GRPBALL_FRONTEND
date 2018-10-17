@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Image, Reveal, Segment } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 import MediaQuery from "react-responsive";
 
 const ButtonExampleSize = ({ createNewUser }) => (

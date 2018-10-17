@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import moment from "moment";
-import RsvpsTable from "./RsvpsTable";
-import { Card, Statistic, Label, Icon } from "semantic-ui-react";
-
-import { baseUrl } from "../constants";
+import { Card, Statistic, Label } from "semantic-ui-react";
 
 export default class MapLandingSessionInfo extends Component {
   state = {
@@ -119,12 +116,6 @@ export default class MapLandingSessionInfo extends Component {
                 <Statistic.Label>Not Sure</Statistic.Label>
                 <Statistic.Value> {delayedRsvps.length}</Statistic.Value>
               </Statistic>
-              {/* <Statistic size="mini">
-                <Statistic.Label>No Response</Statistic.Label>
-                <Statistic.Value>
-                  <Icon name="question" />{" "}
-                </Statistic.Value>
-              </Statistic> */}
             </Card.Description>
           </Card.Content>
         </Card>
