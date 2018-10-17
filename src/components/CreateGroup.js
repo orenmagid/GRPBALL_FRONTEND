@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import LocationSearchInput from "./LocationSearchInput";
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng
-} from "react-places-autocomplete";
+import { geocodeByAddress, getLatLng } from "react-places-autocomplete";
 
 export default class CreateGroup extends Component {
   state = { address: "", latitude: "", longitude: "" };
