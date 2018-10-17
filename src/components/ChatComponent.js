@@ -1,10 +1,9 @@
 import React from "react";
 import { ActionCable } from "react-actioncable-provider";
 import { API_ROOT } from "../constants";
-import NewConversationForm from "./NewConversationForm";
 import MessagesArea from "./MessagesArea";
 import Cable from "./Cable";
-import { Grid, Menu, Segment, Message } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 import MediaQuery from "react-responsive";
 
 import { baseUrl } from "../constants";

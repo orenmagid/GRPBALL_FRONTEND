@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Table } from "semantic-ui-react";
 import moment from "moment";
 
-import { baseUrl } from "../constants";
-
 export default class SessionsTable extends Component {
   render() {
     const { group, user, handleShowSession } = this.props;

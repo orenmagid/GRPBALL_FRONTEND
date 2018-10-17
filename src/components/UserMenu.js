@@ -54,15 +54,15 @@ export default class UserMenu extends Component {
 
   render() {
     const { activeItem } = this.state;
-    let width =
-      window.innerWidth ||
-      document.documentElement.clientWidth ||
-      document.body.clientWidth;
-
-    let height =
-      window.innerHeight ||
-      document.documentElement.clientHeight ||
-      document.body.clientHeight;
+    // let width =
+    //   window.innerWidth ||
+    //   document.documentElement.clientWidth ||
+    //   document.body.clientWidth;
+    //
+    // let height =
+    //   window.innerHeight ||
+    //   document.documentElement.clientHeight ||
+    //   document.body.clientHeight;
 
     return (
       <React.Fragment>

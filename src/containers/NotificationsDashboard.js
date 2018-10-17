@@ -5,8 +5,6 @@ import { Feed, Icon, Message } from "semantic-ui-react";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
 
-import { ActionCable } from "react-actioncable-provider";
-import { API_ROOT } from "../constants";
 import { baseUrl } from "../constants";
 
 export default class NotificationsDashboard extends Component {

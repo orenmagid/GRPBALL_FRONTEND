@@ -84,7 +84,7 @@ export default class GroupCardMinimalDisplay extends Component {
   };
 
   render() {
-    const { user, handleAccordianDisplay, handleCloseClick } = this.props;
+    const { user, handleCloseClick } = this.props;
 
     let hasRequested = this.state.hasRequested;
 

@@ -58,7 +58,10 @@ const orderedMessages = (messages, users) => {
         <div className="ui comments" key={message.id}>
           <div className="comment">
             <a className="avatar">
-              <img src="../noun_basketball_player_1646799-dark-rounded.svg" />
+              <img
+                src="../noun_basketball_player_1646799-dark-rounded.svg"
+                alt="basketball player"
+              />
             </a>
             <div className="content">
               <a className="author">

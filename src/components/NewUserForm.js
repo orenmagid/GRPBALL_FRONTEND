@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { Button, Form, Segment } from "semantic-ui-react";
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng
-} from "react-places-autocomplete";
+import { geocodeByAddress, getLatLng } from "react-places-autocomplete";
 import LocationSearchInput from "./LocationSearchInput";
 
 export default class NewUserForm extends Component {
@@ -32,7 +29,7 @@ export default class NewUserForm extends Component {
   handleChange = (e, { value }) => this.setState({ experience: value });
 
   render() {
-    let { handleCreateOrEditUser, displayNewUserForm } = this.props;
+    let { handleCreateOrEditUser } = this.props;
     const options = [
       { key: "tb", text: "Total Beginner", value: "Total Beginner" },
       { key: "pu", text: "Only Pickup", value: "Only Pickup" },

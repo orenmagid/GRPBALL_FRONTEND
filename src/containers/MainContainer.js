@@ -4,7 +4,6 @@ import UserMenu from "../components/UserMenu";
 import UserDashboard from "./UserDashboard";
 import GroupDashboard from "./GroupDashboard";
 import EditUserProfile from "../components/EditUserProfile";
-import NewUserForm from "../components/NewUserForm";
 import NotificationsDashboard from "./NotificationsDashboard";
 import CalendarDashboard from "./CalendarDashboard";
 import MapDashboard from "./MapDashboard";
@@ -14,7 +13,7 @@ import About from "../components/About";
 import UserFeed from "../components/UserFeed";
 import { Segment, Loader } from "semantic-ui-react";
 
-import { baseUrl, baseUrlForFeed } from "../constants";
+import { baseUrl } from "../constants";
 
 class MainContainer extends React.Component {
   state = {

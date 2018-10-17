@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 import LocationSearchInputForMap from "../components/LocationSearchInputForMap";
-import { Checkbox, Grid, Label, Header, Popup } from "semantic-ui-react";
+import { Checkbox, Grid, Header } from "semantic-ui-react";
 import CalendarSessionInfo from "../components/CalendarSessionInfo";
 import InteractiveSegment from "../components/InteractiveSegment";
 import GroupCardMinimalDisplay from "../components/GroupCardMinimalDisplay";

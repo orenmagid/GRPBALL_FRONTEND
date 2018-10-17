@@ -445,15 +445,6 @@ export default class GroupCard extends Component {
                   above.
                 </p>
               </MediaQuery>
-              {/* <a
-                href="message_administrator"
-                // onClick={this.handleOpenAddUserClick}
-              >
-                <Icon name="mail" />
-                {administrators.length > 1
-                  ? "Message the Administrators"
-                  : "Message the Administrator"}
-              </a> */}
             </Message>
           ) : null}
           {this.state.formToShow === "addUser" ? (
