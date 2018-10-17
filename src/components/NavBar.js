@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Grid, Button } from "semantic-ui-react";
-import LoginForm from "./LoginForm";
-import MediaQuery from "react-responsive";
+import { Grid } from "semantic-ui-react";
 
 const NavBar = ({
   createNewUser,

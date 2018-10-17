@@ -159,8 +159,6 @@ export default class GroupSubDashboard extends Component {
     const { formToShow, currentSession, displayedUser, users } = this.state;
     const { activeIndex, handleAccordianDisplay, sessions, user } = this.props;
 
-    let group = this.state.group ? this.state.group : this.props.group;
-
     return (
       <React.Fragment>
         {currentSession || displayedUser ? (
