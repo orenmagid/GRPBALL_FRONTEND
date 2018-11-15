@@ -77,6 +77,10 @@ body {
   margin-bottom: 1em;
 }
 
+.bottom-margin-quarter-em {
+  margin-bottom: 0.25em;
+}
+
 .margin-auto {
   margin: auto;
 }

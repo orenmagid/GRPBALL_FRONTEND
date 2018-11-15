@@ -77,13 +77,6 @@ class MainContainer extends React.Component {
     }
   }
 
-  handleReceivedUserFeed = response => {
-    // const { userFeed } = response;
-    this.setState({
-      userFeed: [...this.state.chatrooms, response]
-    });
-  };
-
   handleEditProfile = e => {
     e.preventDefault();
     this.state.formToShow === "editProfile"

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import { Button, Form, Segment } from "semantic-ui-react";
+import { Button, Form, Segment, Card } from "semantic-ui-react";
 import { geocodeByAddress, getLatLng } from "react-places-autocomplete";
 import LocationSearchInput from "./LocationSearchInput";
 
@@ -72,116 +72,126 @@ export default class EditUserProfile extends Component {
       return <Redirect to="/" />;
     }
     return (
-      <div className="ui container">
-        <Segment inverted>
-          <i className="window close outline icon" onClick={handleCloseClick} />
-          <Form
-            inverted
-            onSubmit={e =>
-              handleCreateOrEditUser(
-                e,
-                this.props.user,
-                this.state.address ? this.state.address : this.props.address,
-                this.state.latitude,
-                this.state.longitude,
-                this.state.experience
-              )
-            }
-          >
-            <Form.Group widths="equal">
-              <Form.Input
-                name="first_name"
-                fluid
-                label="First name"
-                placeholder="First name"
-                value={this.state.first_name}
-                onChange={this.handleChange}
-              />
-              <Form.Input
-                name="last_name"
-                fluid
-                label="Last name"
-                placeholder="Last name"
-                value={this.state.last_name}
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Form.Group widths="equal">
-              <Form.Input
-                name="username"
-                fluid
-                label="Username"
-                placeholder="Username"
-                value={this.state.username}
-                onChange={this.handleChange}
-              />
-              <Form.Input
-                name="email"
-                fluid
-                label="Email Address"
-                placeholder="Email
+      <Card fluid>
+        <i className="window close outline icon" onClick={handleCloseClick} />
+
+        <Card.Content>
+          <Card.Header className="bottom-margin-quarter-em">
+            Edit Your Profile
+          </Card.Header>
+          <div className="ui container">
+            <Segment inverted>
+              <Form
+                inverted
+                onSubmit={e =>
+                  handleCreateOrEditUser(
+                    e,
+                    this.props.user,
+                    this.state.address
+                      ? this.state.address
+                      : this.props.address,
+                    this.state.latitude,
+                    this.state.longitude,
+                    this.state.experience
+                  )
+                }
+              >
+                <Form.Group widths="equal">
+                  <Form.Input
+                    name="first_name"
+                    fluid
+                    label="First name"
+                    placeholder="First name"
+                    value={this.state.first_name}
+                    onChange={this.handleChange}
+                  />
+                  <Form.Input
+                    name="last_name"
+                    fluid
+                    label="Last name"
+                    placeholder="Last name"
+                    value={this.state.last_name}
+                    onChange={this.handleChange}
+                  />
+                </Form.Group>
+                <Form.Group widths="equal">
+                  <Form.Input
+                    name="username"
+                    fluid
+                    label="Username"
+                    placeholder="Username"
+                    value={this.state.username}
+                    onChange={this.handleChange}
+                  />
+                  <Form.Input
+                    name="email"
+                    fluid
+                    label="Email Address"
+                    placeholder="Email
                 Address"
-                value={this.state.email}
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Form.Group widths="equal">
-              <Form.Input
-                name="phone"
-                fluid
-                label="Phone Number"
-                placeholder="Phone Number"
-                type="Phone Number"
-                value={this.state.phone}
-                onChange={this.handleChange}
-              />
-            </Form.Group>
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                  />
+                </Form.Group>
+                <Form.Group widths="equal">
+                  <Form.Input
+                    name="phone"
+                    fluid
+                    label="Phone Number"
+                    placeholder="Phone Number"
+                    type="Phone Number"
+                    value={this.state.phone}
+                    onChange={this.handleChange}
+                  />
+                </Form.Group>
 
-            <br />
-            <LocationSearchInput
-              type="user_edit"
-              currentLocation={this.state.location}
-              captureAddress={this.captureAddress}
-            />
-            <br />
+                <br />
+                <LocationSearchInput
+                  type="user_edit"
+                  currentLocation={this.state.location}
+                  captureAddress={this.captureAddress}
+                />
+                <br />
 
-            <Form.Group widths="equal">
-              <Form.Input
-                name="age"
-                fluid
-                label="Age"
-                placeholder="Age"
-                type="number"
-                value={this.state.age}
-                onChange={this.handleChange}
-              />
+                <Form.Group widths="equal">
+                  <Form.Input
+                    name="age"
+                    fluid
+                    label="Age"
+                    placeholder="Age"
+                    type="number"
+                    value={this.state.age}
+                    onChange={this.handleChange}
+                  />
 
-              <Form.Input
-                name="height"
-                fluid
-                label="Height (in Inches)"
-                placeholder="Height (in Inches)"
-                type="number"
-                value={this.state.height}
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Form.Group widths="equal">
-              <Form.Select
-                name="experience"
-                label="Highest Level of Experience"
-                options={options}
-                placeholder="Highest Level of Experience"
-                onChange={this.handleExperienceChange}
-              />
-            </Form.Group>
-            {/* <Form.Checkbox label="I agree to the Terms and Conditions" /> */}
-            <Button inverted secondary basic type="submit">
-              Submit
-            </Button>
-          </Form>
-        </Segment>
-      </div>
+                  <Form.Input
+                    name="height"
+                    fluid
+                    label="Height (in Inches)"
+                    placeholder="Height (in Inches)"
+                    type="number"
+                    value={this.state.height}
+                    onChange={this.handleChange}
+                  />
+                </Form.Group>
+                <Form.Group widths="equal">
+                  <Form.Select
+                    name="experience"
+                    label="Highest Level of Experience"
+                    options={options}
+                    placeholder="Highest Level of Experience"
+                    onChange={this.handleExperienceChange}
+                  />
+                </Form.Group>
+                {/* <Form.Checkbox label="I agree to the Terms and Conditions" /> */}
+                <Button inverted secondary basic type="submit">
+                  Submit
+                </Button>
+              </Form>
+            </Segment>
+          </div>
+        </Card.Content>
+      </Card>
     );
   }
 }
